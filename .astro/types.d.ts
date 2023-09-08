@@ -111,179 +111,39 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"blog": {
-"3-extensiones-para-ahorrar-datos-navegando-en-internet.md": {
-  id: "3-extensiones-para-ahorrar-datos-navegando-en-internet.md",
-  slug: "3-extensiones-para-ahorrar-datos-navegando-en-internet",
+"My Coding Ideology.md": {
+  id: "My Coding Ideology.md",
+  slug: "my-coding-ideology",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"3-herramientas-para-crear-el-readme-de-tu-perfil.md": {
-  id: "3-herramientas-para-crear-el-readme-de-tu-perfil.md",
-  slug: "3-herramientas-para-crear-el-readme-de-tu-perfil",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"5-herramientas-diferentes-que-utilizan-IA.md": {
-  id: "5-herramientas-diferentes-que-utilizan-IA.md",
-  slug: "5-herramientas-diferentes-que-utilizan-ia",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"5-pruebas-que-debes-hacer.md": {
-  id: "5-pruebas-que-debes-hacer.md",
-  slug: "5-pruebas-que-debes-hacer",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"9-cursos-de-platzi-para.md": {
-  id: "9-cursos-de-platzi-para.md",
-  slug: "9-cursos-de-platzi-para",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"CuCoders.md": {
-  id: "CuCoders.md",
-  slug: "cucoders",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"ahorra-datos-convierte-y-descarga.md": {
-  id: "ahorra-datos-convierte-y-descarga.md",
-  slug: "ahorra-datos-convierte-y-descarga",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"astro-tu-proximo-framework-favorito.md": {
-  id: "astro-tu-proximo-framework-favorito.md",
-  slug: "astro-tu-proximo-framework-favorito",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"ciberdelitos-en-internet-cuidado-donde-pones-tus-llaves.md": {
-  id: "ciberdelitos-en-internet-cuidado-donde-pones-tus-llaves.md",
-  slug: "ciberdelitos-en-internet-cuidado-donde-pones-tus-llaves",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"como-crear-tu-logotipo-con.md": {
-  id: "como-crear-tu-logotipo-con.md",
-  slug: "como-crear-tu-logotipo-con",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"como-generar-imagenes-con-ia.md": {
-  id: "como-generar-imagenes-con-ia.md",
-  slug: "como-generar-imagenes-con-ia",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"como-hakearon-las-llaves-privadas.md": {
-  id: "como-hakearon-las-llaves-privadas.md",
-  slug: "como-hakearon-las-llaves-privadas",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"company-of-one.md": {
-  id: "company-of-one.md",
-  slug: "company-of-one",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"crea-tu-blog-en-la.md": {
-  id: "crea-tu-blog-en-la.md",
-  slug: "crea-tu-blog-en-la",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"crea-tu-web-personal-en-minutos-y-gratis-con-biolink.md": {
-  id: "crea-tu-web-personal-en-minutos-y-gratis-con-biolink.md",
-  slug: "crea-tu-web-personal-en-minutos-y-gratis-con-biolink",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"el-mejor-sitio-para-descubrir.md": {
-  id: "el-mejor-sitio-para-descubrir.md",
-  slug: "el-mejor-sitio-para-descubrir",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"errores-de-terceros-en-aplicaciones-multiplataformas.md": {
-  id: "errores-de-terceros-en-aplicaciones-multiplataformas.md",
-  slug: "errores-de-terceros-en-aplicaciones-multiplataformas",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"genera-el-nombre-de-tu-marca-o-producto-utilizando-inteligencia-artificial.md": {
-  id: "genera-el-nombre-de-tu-marca-o-producto-utilizando-inteligencia-artificial.md",
-  slug: "genera-el-nombre-de-tu-marca-o-producto-utilizando-inteligencia-artificial",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"pay-link.md": {
-  id: "pay-link.md",
-  slug: "pay-link",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"planifica-tu-semana-con-weektodo.md": {
-  id: "planifica-tu-semana-con-weektodo.md",
-  slug: "planifica-tu-semana-con-weektodo",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"vale-la-pena-crear-una.md": {
-  id: "vale-la-pena-crear-una.md",
-  slug: "vale-la-pena-crear-una",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] },
-"weektodo-2-release.md": {
-  id: "weektodo-2-release.md",
-  slug: "weektodo-2-release",
+"Spark and Checkpointing.md": {
+  id: "Spark and Checkpointing.md",
+  slug: "spark-and-checkpointing",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
 },
 "store": {
-"item1.md": {
-  id: "item1.md",
-  slug: "item1",
+"freelance software development.md": {
+  id: "freelance software development.md",
+  slug: "freelance-software-development",
   body: string,
   collection: "store",
   data: InferEntrySchema<"store">
 } & { render(): Render[".md"] },
-"item2.md": {
-  id: "item2.md",
-  slug: "item2",
+"premium tutoring.md": {
+  id: "premium tutoring.md",
+  slug: "premium-tutoring",
   body: string,
   collection: "store",
   data: InferEntrySchema<"store">
 } & { render(): Render[".md"] },
-"item3.md": {
-  id: "item3.md",
-  slug: "item3",
+"tutoring.md": {
+  id: "tutoring.md",
+  slug: "tutoring",
   body: string,
   collection: "store",
   data: InferEntrySchema<"store">

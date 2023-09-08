@@ -29,32 +29,12 @@ import { Image } from "@astrojs/image/components";
     <ul class="grow shrink">
       <!-- Sidebar content here -->
       <li><a id="home" href="/">Home</a></li>
-      <li><a id="projects" href="/projects">Projects</a></li>
-      <li><a id="resources" href="/resources">Resources</a></li>
+      <li>
+        <a id="products-and-services" href="/products-and-services">Products & Services</a>
+      </li>
       <li><a id="blog" href="/blog/">Blog</a></li>
-      <li><a id="cv" href="/cv">CV</a></li>
-      <li><a href="mailto:contact.i.tchangalov@gmail.com">Contact</a></li>
     </ul>
     <div class="social-icons px-4 my-2 flex self-center">
-      <a
-        href="/support-my-work"
-        class="mx-3"
-        aria-label="Support my work"
-        title="Support my work"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
-          ><path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M5 2h2v3H5zm4 0h2v3H9zm4 0h2v3h-2zm6 7h-2V7H3v11c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3h2c1.103 0 2-.897 2-2v-5c0-1.103-.897-2-2-2zm-4 9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9h10v9zm2-2v-5h2l.002 5H17z"
-          ></path></svg
-        >
-      </a>
       <a
         href="https://github.com/tchangalov"
         target="_blank"
@@ -75,7 +55,7 @@ import { Image } from "@astrojs/image/components";
           ></path>
         </svg>
       </a>
-      
+
       <a
         href="https://www.linkedin.com/in/tchangalov"
         target="_blank"
@@ -96,51 +76,47 @@ import { Image } from "@astrojs/image/components";
       </a>
 
       <a
-        href="/rss.xml"
-        target="_blank"
+        href="mailto:i.tchangalov@gmail.com"
+        target="_blank"        
         class="mx-3"
-        aria-label="RSS Feed"
-        title="RSS Feed"
+        aria-label="email"
+        title="Email"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
+          width="30"
+          height="30"
+          viewBox="0.5 0.5 2.4 2.4"
+          ><path 
+            d="M0.941 1.006h1.444c0.076 0 0.153 0.077 0.153 0.153v1.006c0 0.076 -0.077 0.153 -0.153 0.153h-1.444c-0.076 0 -0.153 -0.077 -0.153 -0.153v-1.006C0.787 1.084 0.865 1.006 0.941 1.006Zm0.022 1.05c0 0.057 0.031 0.087 0.087 0.087h1.225c0.057 0 0.087 -0.031 0.087 -0.087V1.269l-0.583 0.598a0.139 0.139 0 0 1 -0.195 0L0.963 1.269v0.787Zm0.131 -0.875 0.513 0.513a0.104 0.104 0 0 0 0.147 0L2.275 1.181H1.094Z"
+          ></path></svg
+        >
       </a>
     </div>
   </div>
-</div>
-<script>
-  const homeLink = document.getElementById("home");
-  const projectsLink = document.getElementById("projects");
-  const servicesLink = document.getElementById("services");
-  const resourcesLink = document.getElementById("resources");
-  const blogLink = document.getElementById("blog");
-  const cvLink = document.getElementById("cv");
+  <script>
+    const homeLink = document.getElementById("home");
+    const productsAndServicesLink = document.getElementById(
+      "products-and-services"
+    );
+    const blogLink = document.getElementById("blog");
 
-  var isHome = true;
+    var isHome = true;
 
-  const url = window.location.href;
+    const url = window.location.href;
 
-  const pages = [projectsLink, servicesLink, resourcesLink, blogLink, cvLink];
+    const pages = [productsAndServicesLink, blogLink];
 
-  const activeClass = "bg-base-300"; // For primary color replace with `active` class
+    const activeClass = "bg-base-300"; // For primary color replace with `active` class
 
-  pages.forEach((elem) => {
-    if (elem?.id && url.includes(elem.id)) {
-      isHome = false;
-      elem?.classList.add(activeClass);
+    pages.forEach((elem) => {
+      if (elem?.id && url.includes(elem.id)) {
+        isHome = false;
+        elem?.classList.add(activeClass);
+      }
+    });
+    if (isHome) {
+      homeLink?.classList.add(activeClass);
     }
-  });
-  if (isHome) {
-    homeLink?.classList.add(activeClass);
-  }
-</script>
+  </script>
+</div>

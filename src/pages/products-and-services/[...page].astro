@@ -1,46 +1,38 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HorizontalCard from "../../components/HorizontalCard.astro";
+import HorizontalShopItem from "../../components/HorizontalShopItem.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("blog");
-  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  return paginate(posts, { pageSize: 10 });
+  const items = await getCollection("store");
+  items.sort((a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf());
+  return paginate(items, { pageSize: 10 });
 }
-
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Ivelin Tchangalov | Blog">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blog</div>
-  </div>
-
-  {
-    page.data.length === 0 ? (
-      <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
-        <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
-      </div>
-    ) : (
-      <ul>
-        {page.data.map((post) => (
-          <>
-            <HorizontalCard
-              title={post.data.title}
-              img={post.data.heroImage}
-              desc={post.data.description}
-              url={"/blog/" + post.slug}
-              target="_self"
-              badge={post.data.badge}
-            />
-            <div class="divider my-0" />
-          </>
-        ))}
-      </ul>
-    )
-  }
+<BaseLayout title="Store" sideBarActiveItemID="store">
+  <ul>
+    {
+      page.data.map((item) => (
+        <>
+          <HorizontalShopItem
+            title={item.data.title}
+            img={item.data.heroImage}
+            desc={item.data.description}
+            pricing={item.data.pricing}
+            oldPricing={item.data.oldPricing}
+            checkoutUrl={item.data.checkoutUrl}
+            badge={item.data.badge}
+            details={item.data.details}
+            tags={item.data.tags}
+            url={"/products-and-services/" + item.slug}
+          />
+          <div class="divider my-0" />
+        </>
+      ))
+    }
+  </ul>
 
   <div class="flex justify-between">
     {
@@ -56,7 +48,7 @@ const { page } = Astro.props;
           >
             <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
           </svg>{" "}
-          Recent posts
+          Previous page
         </a>
       ) : (
         <div />
@@ -65,7 +57,7 @@ const { page } = Astro.props;
     {
       page.url.next ? (
         <a href={page.url.next} class="btn btn-ghost my-10 mx-5">
-          Older Posts{" "}
+          Next page{" "}
           <svg
             class="h-6 w-6 fill-current md:h-8 md:w-8"
             xmlns="http://www.w3.org/2000/svg"
