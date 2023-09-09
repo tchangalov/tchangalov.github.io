@@ -41,7 +41,7 @@ Rename variables/methods to explain its purpose.
 Example: 
 ```int i = 0``` would need to be renamed to something more informative. Instead try ```int timeIndex = 0```.
 
-If code is more than 300 lines long, start separating the code into new classes/files.
+If code is more than 300 lines long, start separating the code into new classes/files. This will naturally reduce code duplication.
 
 ## Dead Code
 Actively seek out dead code to remove. Keeping the codebase as clean as possible is one of the best things that can be done for the longevity and success of the project.
