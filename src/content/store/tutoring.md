@@ -14,4 +14,4 @@ heroImage: "/tutoring.png"
 
 **How**: I will provide 1-on-1 tutoring for your schoolwork. I will help you with your homework and/or lesson material.
 
-**Venue**: Virtual or in-person sessions. In-person sessions are limited to certain areas of Maryland only.
+**Venue**: It will be a virtual conference.
