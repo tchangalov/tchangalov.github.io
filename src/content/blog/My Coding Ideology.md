@@ -21,7 +21,7 @@ Solicit feedback as soon as humanly possible. It helps figure out what your next
 
 Write down your tasks on sticky notes and organize them by priority. 
 - For work, I use Jira. 
-- For personal stuff, I use [todoist](https://todoist.com/) (the free version)
+- For personal stuff, I use [todoist](https://todoist.com/) (the free version).
 
 ## Test Everything!
 
@@ -46,6 +46,7 @@ If code is more than 300 lines long, start separating the code into new classes/
 ## Dead Code
 Actively seek out dead code to remove. Keeping the codebase as clean as possible is one of the best things that can be done for the longevity and success of the project.
 
-- archive old repositories
-- delete old Jenkins Pipelines
-- remove unused configuration files
+- Archive old repositories
+- Delete old Jenkins Pipelines
+- Remove unused configuration files
+- Remove unused classes, methods, and variables
