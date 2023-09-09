@@ -11,7 +11,7 @@ Hopefully this is the first of many posts in my blog, where I explore various to
 
 ## Introduction
 
-I try to follow these rules 80% of the time. This leave 20% of leeway. The 20% of shortcuts I take allows me to move faster and focusing on what's truly important.
+I try to follow these rules 80% of the time. This leave 20% of leeway. This 20% allows me to move faster and focus on what's truly important.
 
 ## Motivation
 
