@@ -8,9 +8,9 @@ heroImage: "/tutoring.png"
 ---
 
 **What**: Build your skills in the following subjects:
-- Computer Science
-- Math
-- Science
+- Computer Science (K-12, Undergraduate, Graduate)
+- Math (K-12)
+- Science (K-12)
 
 **How**: I will provide 1-on-1 tutoring for your schoolwork. I will help you with your homework and/or lesson material.
 

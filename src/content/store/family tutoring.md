@@ -1,10 +1,10 @@
 ---
-title: "Premium Tutoring"
-description: "Customized 1-on-1 interactive lesson-plan."
+title: "Family Tutoring"
+description: "Customized 1-on-1 interactive lesson-plan for the family!"
 updatedDate: "Sep 07 2023"
-pricing: "$30/hour"
-checkoutUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfgeRzWO7q8EbLfRnxCsOokfZKd2Bf4umRllMhKNWnxgFPbfA/viewform?usp=pp_url&entry.927973310=Premium+Tutoring"
-heroImage: "/premium-tutoring.png"
+pricing: "$18/hour per person"
+checkoutUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfgeRzWO7q8EbLfRnxCsOokfZKd2Bf4umRllMhKNWnxgFPbfA/viewform?usp=pp_url&entry.927973310=Family+Tutoring"
+heroImage: "/family-tutoring.png"
 ---
 
 **What**: Build your skills in the following subjects:

@@ -127,6 +127,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] },
 },
 "store": {
+"family tutoring.md": {
+  id: "family tutoring.md",
+  slug: "family-tutoring",
+  body: string,
+  collection: "store",
+  data: InferEntrySchema<"store">
+} & { render(): Render[".md"] },
 "freelance software development.md": {
   id: "freelance software development.md",
   slug: "freelance-software-development",
