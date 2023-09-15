@@ -2,7 +2,7 @@
 title: "Premium Tutoring"
 description: "Customized 1-on-1 interactive lesson-plan."
 updatedDate: "Sep 07 2023"
-pricing: "$30/hour"
+pricing: "$27/hour"
 checkoutUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfgeRzWO7q8EbLfRnxCsOokfZKd2Bf4umRllMhKNWnxgFPbfA/viewform?usp=pp_url&entry.927973310=Premium+Tutoring"
 heroImage: "/premium-tutoring.png"
 ---
