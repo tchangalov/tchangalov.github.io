@@ -1,6 +1,6 @@
 ---
 title: "My Coding Ideology - Part 1"
-description: "A collection of the practices which drive my software development career"
+description: "A collection of the practices which drive my software development career."
 pubDate: "Sep 15, 2023"
 heroImage: "/bulb.png"
 ---
@@ -39,7 +39,7 @@ I follow the F.I.R.S.T. approach for unit testing. See this [Medium](https://med
 - Self-verifying: I don't allow non-deterministic or ambiguous behavior in my tests.
 - Timely: I write tests early and often.
 
-## 3. Polishing my Code
+## 3. Polishing My Code
 
 I create methods to remove duplication. I also rename variables/methods to explain its purpose.
 
@@ -48,7 +48,7 @@ Example:
 
 If my code is more than 300 lines long, I start separating the code into new classes/files. This will naturally reduce code duplication.
 
-## 4. I Delete Dead Code
+## 4. Deleting Dead Code
 
 Keeping the codebase as clean as possible is one of the best things that can be done for the longevity and success of the project. Therefore, I do the following things to delete code:
 
