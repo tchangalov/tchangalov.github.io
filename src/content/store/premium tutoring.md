@@ -7,14 +7,15 @@ checkoutUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfgeRzWO7q8EbLfRnxCsOokfZ
 heroImage: "/premium-tutoring.png"
 ---
 
-**What**: Build your skills in the following subjects:
+Build your skills in the following subjects:
 - Computer Science (K-12, Undergraduate, Graduate)
 - Math (K-12)
 - Science (K-12)
 
-**How**: I will create a personalized plan based on your (or your child's) goals and needs. I will create an interactive lesson-plan to build the knowledge needed to succeed.
+I will provide 1-on-1 tutoring for your schoolwork. Additionally, I will create a personalized plan based on your goals and needs. This will be an engaging and interactive lesson plan built to hone your knowledge on the material.
 
-**Venue**: It will be a virtual conference.
+**Venue**: Tutoring classes will be provided online. In-person classes are available, but limited to certain locations - prices may vary.
 
+**Family Discount**: ~~$27~~ $20/person, if two or more participate in tutoring.
 
 

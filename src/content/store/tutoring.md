@@ -7,11 +7,13 @@ checkoutUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfgeRzWO7q8EbLfRnxCsOokfZ
 heroImage: "/tutoring.png"
 ---
 
-**What**: Build your skills in the following subjects:
+Build your skills in the following subjects:
 - Computer Science (K-12, Undergraduate, Graduate)
 - Math (K-12)
 - Science (K-12)
 
-**How**: I will provide 1-on-1 tutoring for your schoolwork. I will help you with your homework and/or lesson material.
+I will provide 1-on-1 tutoring for your schoolwork.
 
-**Venue**: It will be a virtual conference.
+**Venue**: Tutoring classes will be provided online. In-person classes are available, but limited to certain locations - prices may vary.
+
+**Family Discount**: ~~$20~~ $15/person, if two or more participate in tutoring.
