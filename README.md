@@ -1,8 +1,8 @@
-# Astro Modern Personal Website
+# Personal Website
 
-![Astro Modern Personal Website](public/social_img.png)
+![My banner](public/social_img.png)
 
-Modern Personal Website Template with Project Section, CV Section, Paginated Blog on Astro framework.
+Modern Personal Website Template with Paginated Blog on Astro framework.
 
 ## Installation
 
