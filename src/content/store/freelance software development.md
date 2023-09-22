@@ -3,7 +3,7 @@ title: "Freelance Software Development"
 description: ""
 updatedDate: "Sep 06 2023"
 pricing: "Varies"
-checkoutUrl: "mailto:i.tchangalov"
+checkoutUrl: "mailto:i.tchangalov@gmail.com"
 heroImage: "/code.png"
 ---
 
