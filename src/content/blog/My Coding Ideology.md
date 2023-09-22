@@ -19,7 +19,7 @@ First, I always ask myself: Who are you coding it for? Is it customers, colleagu
 
 Then, I solicit feedback from them as soon as humanly possible. It helps me figure out what my next steps should be.
 
-To get organized, I write down my tasks on sticky notes and sort them by priority. 
+To get organized, I write down my tasks down and sort them by priority. 
 - For work, I use Jira. 
 - For personal stuff, I use [todoist](https://todoist.com/) (the free version).
 
@@ -41,12 +41,12 @@ I follow the F.I.R.S.T. approach for unit testing. See this [Medium](https://med
 
 ## 3. Polishing My Code
 
-I create methods to remove duplication. I also rename variables/methods to explain its purpose.
+I create methods to remove duplication. I also rename variables/methods to explain their purpose.
 
 Example: 
 ```int i = 0``` would need to be renamed to something more informative. Instead try ```int timeIndex = 0```.
 
-If my code is more than 300 lines long, I start separating the code into new classes/files. This will naturally reduce code duplication.
+If my code is more than 300 lines long, I start separating the code into new classes/files. This will naturally reduce code duplication and improve readability.
 
 ## 4. Deleting Dead Code
 
