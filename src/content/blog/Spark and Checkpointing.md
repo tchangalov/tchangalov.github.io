@@ -77,7 +77,7 @@ def dropAllTables(db: String) {
 }
 ```
 
-The source code would need to invoke a directive to restore tables are needed.
+The source code would need to invoke a directive to restore tables that are needed.
 
 ```scala
 def restoreTable(db: String, table: String, path: String) {
