@@ -5,7 +5,7 @@ pubDate: "Oct 6, 2023"
 heroImage: "/orc-to-parquet.png"
 ---
 
-# Introduction
+## Introduction
 
 Everyone has data and lots of it. It's organized into efficient file formats. The race to find the best file format is on-going and the open-source community has developed a few of them. Two popular ones are Orc and Parquet.
 
@@ -16,7 +16,7 @@ Parquet is the default for data in Spark and hence has more built-in support.
 
 ## Major Findings
 
-### Corrupted Data (broken emoji)
+### Corrupted Data
 
 If your tables contain long strings (>500,000 characters in a single field), the data is corrupted. Writing succeeds, but reading fails. The best solution for our use case was to modify the page size row checks. See: https://github.com/apache/parquet-mr/pull/297
 
@@ -36,13 +36,13 @@ Zstd compression is a more recent technology – so, downstream consumers using 
 
 Based on my experience, queries run slightly faster on Parquet than they do on Orc. There are isolated cases which perform worse, but the impact is minor.
 
-## Test Strategy
+## ✔️ Test Strategy 
 
 A large scale migration like this should have a reliable test strategy designed to identify and catch risks.
 
 ### Check Data Integrity
 
-Check for ability to access/read/write all rows and all columns to find hidden nuiances:
+Check for ability to access/read/write all rows and all columns to find hidden nuances:
 Functional tests (unit/integration)
 Full One to One Data Comparisons
 See: https://github.com/G-Research/spark-extension/blob/master/DIFF.md
