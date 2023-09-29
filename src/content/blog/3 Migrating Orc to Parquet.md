@@ -7,11 +7,12 @@ heroImage: "/orc-to-parquet.png"
 
 ## Introduction
 
-Everyone has data and lots of it. It's organized into efficient file formats. The race to find the best file format is on-going in the open-source community. Two popular ones are Orc and Parquet.
+Everyone has data. If it's high volumes of it, it's likely organized into an efficient file format. The race to find the best file format is on-going in the open-source community. Two popular ones are Orc and Parquet. Let's imagine that your organization currently uses Orc, but wants to switch to Parquet.
 
 ## ❓ Why Migrate?
 
-Why would we want to migrate from Orc to Parquet? Well, Parquet with zstd compression produces 25-30% less data than Orc with snappy compression.
+Why would we want to do that if you have already committed to Orc and have tons of data in this format? Well, Parquet with zstd compression produces 25-30% less data than Orc with snappy compression.
+
 
 Less data means:
 1. Less S3 cost.
