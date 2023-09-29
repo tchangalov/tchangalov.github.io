@@ -111,16 +111,23 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"blog": {
-"My Coding Ideology.md": {
-  id: "My Coding Ideology.md",
-  slug: "my-coding-ideology",
+"1 My Coding Ideology.md": {
+  id: "1 My Coding Ideology.md",
+  slug: "1-my-coding-ideology",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"Spark and Checkpointing.md": {
-  id: "Spark and Checkpointing.md",
-  slug: "spark-and-checkpointing",
+"2 Spark and Checkpointing.md": {
+  id: "2 Spark and Checkpointing.md",
+  slug: "2-spark-and-checkpointing",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
+"3 Migrating Orc to Parquet.md": {
+  id: "3 Migrating Orc to Parquet.md",
+  slug: "3-migrating-orc-to-parquet",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
