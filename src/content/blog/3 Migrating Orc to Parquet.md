@@ -7,7 +7,7 @@ heroImage: "/orc-to-parquet.png"
 
 ## Introduction
 
-Everyone has data. If it's high volumes of it, it's likely organized into an efficient file format. The race to find the best file format is on-going in the open-source community. Two popular ones are Orc and Parquet. Let's imagine that your organization currently uses Orc, but wants to switch to Parquet.
+Everyone has data. If it's high volumes of it, it's likely organized into an efficient file format. The race to find the best file format is on-going in the open-source community. Two popular ones are Orc and Parquet. Let's imagine that you currently use Orc, but want to switch to Parquet.
 
 ## ❓ Why Migrate?
 
@@ -26,7 +26,7 @@ A large scale migration like this should have a reliable test strategy designed 
 
 ### Checking Data Integrity
 
-Check for ability to access/read/write all rows and all columns to find hidden nuances:
+Check for ability to access/read/write all rows and all columns:
 - Functional tests (unit/integration)
 - Full Data Comparisons
   - See: https://github.com/G-Research/spark-extension/blob/master/DIFF.md
@@ -37,7 +37,7 @@ Check for ability to access/read/write all rows and all columns to find hidden n
 All legacy data has to be migrated and verified. Below is the assurance strategy I would use: 
 - Evaluate/monitor instance fleet and operational plan.
 - Row counts must match for all partitions.
-- Full data comparison must match in 1 of every 30 partitions.
+- Full data comparison must match for a sample of the data at regular intervals.
 
 ### Performance
 
@@ -45,15 +45,13 @@ All legacy data has to be migrated and verified. Below is the assurance strategy
 2. Observe table stats: total # of files, average file sizes, outliers file sizes.
 3. Run a performance benchmarking suite, which consists of a set of curated queries.
 
-## 🔎 Major Findings
-
-I will discuss my lessons learned for each of the behaviors identified below during the migration.
+## 🔎 Major Changes
 
 ### Less Data
 
 Creating less data means that we can reduce the shuffle partitions **slightly** for a given workload to process more efficiently. Tuning the value for  ```spark.shuffle.partitions``` yields a slight performance boost.
 
-However, storing data in zstd requires more decompression time. In a few cases, downstream consumers need to allocate larger executors to successfully decompress files (higher values for ```spark.executor.memory```).
+However, storing data in zstd requires more decompression time. In a few cases, we need to allocate larger executors to successfully decompress files (higher values for ```spark.executor.memory```).
 
 ### Incompatible Data
 
@@ -61,7 +59,7 @@ Zstd compression is a more recent technology – so, downstream consumers using 
 
 ### Corrupted Data
 
-If your tables contain long strings (>500,000 characters in a single field), the data can get corrupted for that column. Writing the data succeeds, but reading it fails. The best solution for our use case was to modify the page size row checks at write time. See: https://github.com/apache/parquet-mr/pull/297
+If your tables contain long strings (>500,000 characters in a single field), the data can get corrupted for that column. Writing the data succeeds, but reading it fails. One solution was to modify the page size row checks at write time. See: https://github.com/apache/parquet-mr/pull/297
 
 ### Query Benchmark
 
