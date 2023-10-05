@@ -11,8 +11,7 @@ Everyone has data. If it's high volumes of it, it's likely organized into an eff
 
 ## ❓ Why Migrate?
 
-Why would we want to do that if you have already committed to Orc and have tons of data in this format? Well, Parquet with zstd compression produces 25-30% less data than Orc with snappy compression.
-
+Why would we want to do that? Well, Parquet with zstd compression produces 25-30% less data than Orc with snappy compression.
 
 Less data means:
 1. Less S3 cost.
@@ -22,27 +21,27 @@ Additionally, Parquet is the default in Spark and hence has more built-in suppor
 
 ## ✔️ Approach & Test Strategy
 
-A large scale migration like this should have a reliable test strategy designed to identify and catch risks.
+A migration like this should have a reliable test strategy designed to identify and catch risks.
 
 ### Checking Data Integrity
 
-Check for ability to access/read/write all rows and all columns:
+Perform:
 - Functional tests (unit/integration)
 - Full Data Comparisons
   - See: https://github.com/G-Research/spark-extension/blob/master/DIFF.md
-- [UAT] Request sign-off by all downstream consumers
+- [UAT] Request sign-off by all consumers
 
 ### Verifying Back processing
 
-All legacy data has to be migrated and verified. Below is the assurance strategy I would use: 
-- Evaluate/monitor instance fleet and operational plan.
+All existing data has to be migrated and verified. Below is the assurance strategy I would use: 
+- Evaluate the instance fleet and operational plan.
 - Row counts must match for all partitions.
 - Full data comparison must match for a sample of the data at regular intervals.
 
 ### Performance
 
-1. Observe runtime and cost stats.
-2. Observe table stats: total # of files, average file sizes, outliers file sizes.
+1. Observe runtime and cost statistics.
+2. Observe table statistics: total # of files, average file sizes, and outliers.
 3. Run a performance benchmarking suite, which consists of a set of curated queries.
 
 ## 🔎 Major Changes
@@ -55,11 +54,11 @@ However, storing data in zstd requires more decompression time. In a few cases, 
 
 ### Incompatible Data
 
-Zstd compression is a more recent technology – so, downstream consumers using **older** versions of spark, hive, presto, etc. may have trouble reading the data.
+Zstd compression is a more recent technology – so, consumers using **older** versions of spark, hive, presto, etc. may have trouble reading the data.
 
 ### Corrupted Data
 
-If your tables contain long strings (>500,000 characters in a single field), the data can get corrupted for that column. Writing the data succeeds, but reading it fails. One solution was to modify the page size row checks at write time. See: https://github.com/apache/parquet-mr/pull/297
+If your tables contain long strings (>500,000 characters in a single field), the data can get corrupted for that column. Writing the data succeeds, but reading it fails. One solution is to modify the page size row checks at write time. See: https://github.com/apache/parquet-mr/pull/297
 
 ### Query Benchmark
 
