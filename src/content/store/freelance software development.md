@@ -20,3 +20,7 @@ Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com)
 ✔ SQL, Spark, Big Data, & Reporting.
 
 ✔ AWS Cloud Computing
+
+✔ Automation
+
+✔ App Development

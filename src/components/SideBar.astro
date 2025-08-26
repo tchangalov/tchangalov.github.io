@@ -32,6 +32,7 @@ import { Image } from "@astrojs/image/components";
       <li>
         <a id="products-and-services" href="/products-and-services">Products & Services</a>
       </li>
+      <li><a id="portfolio" href="/portfolio">Portfolio</a></li>
       <li><a id="blog" href="/blog/">Blog</a></li>
     </ul>
     <div class="social-icons px-4 my-2 flex self-center">
@@ -99,13 +100,14 @@ import { Image } from "@astrojs/image/components";
     const productsAndServicesLink = document.getElementById(
       "products-and-services"
     );
+    const portfolioLink = document.getElementById("portfolio");
     const blogLink = document.getElementById("blog");
 
     var isHome = true;
 
     const url = window.location.href;
 
-    const pages = [productsAndServicesLink, blogLink];
+    const pages = [productsAndServicesLink, portfolioLink, blogLink];
 
     const activeClass = "bg-base-300"; // For primary color replace with `active` class
 
