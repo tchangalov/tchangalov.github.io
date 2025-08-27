@@ -20,25 +20,13 @@ const storeSchema = z.object({
     heroImage: z.string().optional()
 });
 
-const portfolioSchema = z.object({
-    title: z.string(),
-    description: z.string(),
-    tech: z.string(),
-    github: z.string().optional(),
-    live: z.string().optional(),
-    image: z.string().optional()
-});
-
 export type BlogSchema = z.infer<typeof blogSchema>;
 export type StoreSchema = z.infer<typeof storeSchema>;
-export type PortfolioSchema = z.infer<typeof portfolioSchema>;
 
 const blogCollection = defineCollection({ schema: blogSchema });
 const storeCollection = defineCollection({ schema: storeSchema });
-const portfolioCollection = defineCollection({ schema: portfolioSchema });
 
 export const collections = {
     'blog': blogCollection,
-    'store': storeCollection,
-    'portfolio': portfolioCollection
+    'store': storeCollection
 }
