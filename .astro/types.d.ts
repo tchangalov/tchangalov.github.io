@@ -139,21 +139,21 @@ declare module 'astro:content' {
   slug: "project-1",
   body: string,
   collection: "portfolio",
-  data: any
+  data: InferEntrySchema<"portfolio">
 } & { render(): Render[".md"] },
 "project-2.md": {
   id: "project-2.md",
   slug: "project-2",
   body: string,
   collection: "portfolio",
-  data: any
+  data: InferEntrySchema<"portfolio">
 } & { render(): Render[".md"] },
 "project-3.md": {
   id: "project-3.md",
   slug: "project-3",
   body: string,
   collection: "portfolio",
-  data: any
+  data: InferEntrySchema<"portfolio">
 } & { render(): Render[".md"] },
 },
 "store": {
