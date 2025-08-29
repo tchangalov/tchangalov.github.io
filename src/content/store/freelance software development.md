@@ -11,4 +11,4 @@ Transform your ideas into robust, scalable software solutions. I'm a detail-orie
 
 ## 📞 **Let's Build Something Amazing Together**
 
-**Ready to bring your software vision to life?** Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com) to discuss your project requirements and get a customized proposal. I'll help you understand the technical approach, timeline, and investment needed to make your project a success.
+**Ready to bring your software vision to life?** Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com) to discuss your project requirements and get a customized proposal. I'll help you understand the technical approach and timeline to make your project a success.
