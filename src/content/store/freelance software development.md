@@ -1,5 +1,5 @@
 ---
-title: "Freelance Software Development"
+title: "Freelance Software Development & Consulting"
 description: "Expert software development services for Big Data, Infrastructure, and AI projects. Delivering scalable solutions with proven results."
 updatedDate: "Jan 15 2025"
 pricing: "Project-based pricing - Get a custom quote"
