@@ -45,4 +45,4 @@ Transform your team's technical capabilities with customized training programs d
 
 ✅ **ROI Focused** - Training designed to deliver immediate business value
 
-**Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com) to discuss your team's training needs and get a customized proposal.**
+Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com) to discuss your team's training needs and get a customized proposal.
