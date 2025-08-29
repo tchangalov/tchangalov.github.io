@@ -9,30 +9,68 @@ export async function getStaticPaths({ paginate }) {
   return paginate(items, { pageSize: 10 });
 }
 const { page } = Astro.props;
+
+// Separate items into categories
+const personalItems = page.data.filter(item => 
+  item.data.title === "Tutoring" || item.data.title === "Premium Tutoring"
+);
+const professionalItems = page.data.filter(item => 
+  item.data.title === "Freelance Software Development" || item.data.title === "Technology Training Services"
+);
 ---
 
 <BaseLayout title="Store" sideBarActiveItemID="store">
-  <ul>
-    {
-      page.data.map((item) => (
-        <>
-          <HorizontalShopItem
-            title={item.data.title}
-            img={item.data.heroImage}
-            desc={item.data.description}
-            pricing={item.data.pricing}
-            oldPricing={item.data.oldPricing}
-            checkoutUrl={item.data.checkoutUrl}
-            badge={item.data.badge}
-            details={item.data.details}
-            tags={item.data.tags}
-            url={"/products-and-services/" + item.slug}
-          />
-          <div class="divider my-0" />
-        </>
-      ))
-    }
-  </ul>
+  <!-- Personal Section -->
+  <div class="mb-12">
+    <h2 class="divider text-3xl font-bold mb-6">Personal</h2>
+    <ul>
+      {
+        personalItems.map((item) => (
+          <>
+            <HorizontalShopItem
+              title={item.data.title}
+              img={item.data.heroImage}
+              desc={item.data.description}
+              pricing={item.data.pricing}
+              oldPricing={item.data.oldPricing}
+              checkoutUrl={item.data.checkoutUrl}
+              badge={item.data.badge}
+              details={item.data.details}
+              tags={item.data.tags}
+              url={"/products-and-services/" + item.slug}
+            />
+            <div class="divider my-0" />
+          </>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- Professional Section -->
+  <div class="mb-12">
+    <h2 class="divider text-3xl font-bold mb-6">Professional</h2>
+    <ul>
+      {
+        professionalItems.map((item) => (
+          <>
+            <HorizontalShopItem
+              title={item.data.title}
+              img={item.data.heroImage}
+              desc={item.data.description}
+              pricing={item.data.pricing}
+              oldPricing={item.data.oldPricing}
+              checkoutUrl={item.data.checkoutUrl}
+              badge={item.data.badge}
+              details={item.data.details}
+              tags={item.data.tags}
+              url={"/products-and-services/" + item.slug}
+            />
+            <div class="divider my-0" />
+          </>
+        ))
+      }
+    </ul>
+  </div>
 
   <div class="flex justify-between">
     {

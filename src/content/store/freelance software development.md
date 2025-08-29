@@ -1,26 +1,14 @@
 ---
 title: "Freelance Software Development"
-description: ""
-updatedDate: "Sep 06 2023"
-pricing: "Varies"
+description: "Expert software development services for Big Data, Infrastructure, and AI projects. Delivering scalable solutions with proven results."
+updatedDate: "Jan 15 2025"
+pricing: "Project-based pricing - Get a custom quote"
 checkoutUrl: "mailto:i.tchangalov@gmail.com"
 heroImage: "/code.png"
 ---
 
-Hire me to help you with your software project. I am a detail-oriented professional with a track record of delivering outstanding results in Big Data and Software Infrastructure projects.
+Transform your ideas into robust, scalable software solutions. I'm a detail-oriented professional with 7+ years of experience delivering outstanding results in Big Data, Software Infrastructure, and AI projects. From concept to deployment, I ensure your project succeeds.
 
-Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com)
+## 📞 **Let's Build Something Amazing Together**
 
-## Core Competencies: 
-
-✔ Java, Scala, Python.
-
-✔ Quality Assurance.
-
-✔ SQL, Spark, Big Data, & Reporting.
-
-✔ AWS Cloud Computing
-
-✔ Automation
-
-✔ App Development
+**Ready to bring your software vision to life?** Contact me at [i.tchangalov@gmail.com](mailto:i.tchangalov@gmail.com) to discuss your project requirements and get a customized proposal. I'll help you understand the technical approach, timeline, and investment needed to make your project a success.
