@@ -7,7 +7,7 @@ checkoutUrl: "mailto:i.tchangalov@gmail.com"
 heroImage: "/tech-training-services.png"
 ---
 
-Transform your team's technical capabilities with customized training programs designed to accelerate AI adoption and modern development practices.
+Transform your team's technical capabilities with customized training programs designed to accelerate AI adoption and modern technology.
 
 ## Training Programs Available:
 
