@@ -111,6 +111,13 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"blog": {
+"AI-Generated Dashboards Lessons Learned.md": {
+  id: "AI-Generated Dashboards Lessons Learned.md",
+  slug: "ai-generated-dashboards-lessons-learned",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "My Coding Ideology.md": {
   id: "My Coding Ideology.md",
   slug: "my-coding-ideology",
