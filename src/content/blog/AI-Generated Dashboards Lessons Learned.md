@@ -1,7 +1,7 @@
 ---
 title: "AI-Generated Dashboards: Lessons Learned"
 description: "I used AI to build dashboards for job monitoring, infrastructure compliance, and cost. Here is what I learned about ROI, design, and where the workflow still falls short."
-pubDate: "May 18, 2026"
+pubDate: "May 21, 2026"
 heroImage: "/AI-Dashboard.PNG"
 ---
 
@@ -9,7 +9,7 @@ heroImage: "/AI-Dashboard.PNG"
 *I last wrote in my blog in early 2024. Since then, AI has taken over the software industry and revolutionized how we think about software engineering. This post shows an example of how my approach to building software with AI has evolved over the past months.*
 
 ## Key Takeaways
-1. AI eliminates the value vs. effort matrix. You can just try things now.
+1. AI eliminates the value vs. effort decision matrix. You can just try things now.
 2. AI enables you to explore complex relationships across datasets that were previously hidden or too costly to investigate.
 3. Design and verification is more crucial than ever. AI is fast, but verification is still slow.
 4. The workflow for dashboarding still has friction.
