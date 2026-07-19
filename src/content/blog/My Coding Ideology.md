@@ -3,6 +3,7 @@ title: "My Coding Ideology - Part 1"
 description: "A collection of the practices which drive my software development career."
 pubDate: "Sep 15, 2023"
 heroImage: "/bulb.png"
+tags: ["Software Engineering", "Career", "Testing", "Productivity"]
 ---
 
 ## Hello World!

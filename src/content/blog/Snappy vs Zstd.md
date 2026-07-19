@@ -3,6 +3,7 @@ title: "Snappy vs. Zstd"
 description: "A user perspective of two popular file format compressions."
 pubDate: "Jan 15, 2024"
 heroImage: "/file-compression.png"
+tags: ["Data Compression", "Snappy", "Zstd", "Performance"]
 ---
 
 # Introduction

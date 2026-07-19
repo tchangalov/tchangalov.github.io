@@ -3,6 +3,7 @@ title: "AI-Generated Dashboards: Lessons Learned"
 description: "I used AI to build dashboards for job monitoring, infrastructure compliance, and cost. Here is what I learned about ROI, design, and where the workflow still falls short."
 pubDate: "May 21, 2026"
 heroImage: "/AI-Dashboard.PNG"
+tags: ["AI", "Data Visualization", "Dashboarding"]
 ---
 
 ## Foreword

@@ -1,6 +1,7 @@
 ---
 import { StoreSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
+import ContactForm from "../components/ContactForm.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 
@@ -19,7 +20,6 @@ const {
 
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(updatedDate).format("ll");
-import { Image } from "@astrojs/image/components";
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}>
@@ -35,14 +35,22 @@ import { Image } from "@astrojs/image/components";
           <div class="grow md:grow-0">
             <span class="text-xl mr-1"> {pricing}</span>
           </div>
-            <a class="btn btn-primary grow md:grow-0 ml-4" href={checkoutUrl} target="_blank">Get Started</a>
-          </div>
         </div>
       </div>
       
       <div class="divider my-2"></div>
       
       <slot />
+      
+      <div class="divider my-8"></div>
+      
+      <ContactForm 
+        title="Let's Work Together" 
+        description="Have a project in mind? Need a custom quote? Fill out the form below and I'll get back to you within 24 hours."
+      />
+      <p class="text-base-content/60 mt-6 text-center">
+        Or email me directly: <a href="mailto:i.tchangalov@gmail.com" class="underline hover:text-primary">i.tchangalov@gmail.com</a>
+      </p>
     </article>
   </main>
 </BaseLayout>

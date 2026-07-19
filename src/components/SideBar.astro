@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 ---
 
 <div class="drawer-side bg-base-200">
@@ -13,14 +12,12 @@ import { Image } from "@astrojs/image/components";
           class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6 h-36"
         >
           <div>
-            <Image
-              class="mask mask-circle"
-              aspectRatio="1:1"
-              format="webp"
-              width={300}
-              height={300}
+            <img
+              class="mask mask-circle w-full h-full object-cover"
               src="/fav.png"
               alt="Profile image"
+              width="300"
+              height="300"
             />
           </div>
         </div>

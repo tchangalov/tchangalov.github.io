@@ -3,6 +3,7 @@ title: "Spark and Checkpointing"
 description: "An approach to building a resilient data pipeline."
 pubDate: "Sep 26, 2023"
 heroImage: "/spark.png"
+tags: ["Apache Spark", "Data Engineering", "EMR", "Resilient Pipelines"]
 ---
 
 ## Introduction

@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalShopItem from "../../components/HorizontalShopItem.astro";
 import { getCollection } from "astro:content";
+import ContactForm from "../../components/ContactForm.astro";
 
 export async function getStaticPaths({ paginate }) {
   const items = await getCollection("store");
@@ -10,67 +11,99 @@ export async function getStaticPaths({ paginate }) {
 }
 const { page } = Astro.props;
 
-// Separate items into categories
-const personalItems = page.data.filter(item => 
+// Separate items by buyer persona
+const studentItems = page.data.filter(item => 
   item.data.title === "Tutoring" || item.data.title === "Premium Tutoring"
 );
+
 const professionalItems = page.data.filter(item => 
-  item.data.title === "Tailored Software & Consulting for Growing Businesses" || item.data.title === "Technology Training Services"
+  item.data.title === "Technology Training Services"
+);
+
+const businessItems = page.data.filter(item => 
+  item.data.title === "Tailored Software & Consulting for Growing Businesses"
 );
 ---
 
-<BaseLayout title="Store" sideBarActiveItemID="store">
-  <!-- Personal Section -->
-  <div class="mb-12">
-    <h2 class="divider text-3xl font-bold mb-6">Personal</h2>
-    <ul>
-      {
-        personalItems.map((item) => (
-          <>
-            <HorizontalShopItem
-              title={item.data.title}
-              img={item.data.heroImage}
-              desc={item.data.description}
-              pricing={item.data.pricing}
-              oldPricing={item.data.oldPricing}
-              checkoutUrl={item.data.checkoutUrl}
-              badge={item.data.badge}
-              details={item.data.details}
-              tags={item.data.tags}
-              url={"/products-and-services/" + item.slug}
-            />
-            <div class="divider my-0" />
-          </>
-        ))
-      }
-    </ul>
+<BaseLayout title="Products & Services" sideBarActiveItemID="store">
+  <div class="prose max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4">Products & Services</h1>
+    <p class="text-lg text-base-content/70 mb-12">
+      Tailored offerings for businesses, professional teams, and individual learners. 
+      Find the right fit for your goals.
+    </p>
   </div>
 
-  <!-- Professional Section -->
-  <div class="mb-12">
-    <h2 class="divider text-3xl font-bold mb-6">Professional</h2>
-    <ul>
-      {
-        professionalItems.map((item) => (
-          <>
-            <HorizontalShopItem
-              title={item.data.title}
-              img={item.data.heroImage}
-              desc={item.data.description}
-              pricing={item.data.pricing}
-              oldPricing={item.data.oldPricing}
-              checkoutUrl={item.data.checkoutUrl}
-              badge={item.data.badge}
-              details={item.data.details}
-              tags={item.data.tags}
-              url={"/products-and-services/" + item.slug}
-            />
-            <div class="divider my-0" />
-          </>
-        ))
-      }
-    </ul>
-  </div>
+  <!-- Businesses & Organizations -->
+  <section class="mb-16" id="businesses">
+    <div class="divider text-3xl font-bold mb-8">Businesses & Organizations</div>
+    <div class="grid gap-6">
+      {businessItems.map((item) => (
+          <HorizontalShopItem
+            title={item.data.title}
+            img={item.data.heroImage}
+            desc={item.data.description}
+            pricing={item.data.pricing}
+            oldPricing={item.data.oldPricing}
+            checkoutUrl={item.data.checkoutUrl}
+            badge={item.data.badge}
+            details={item.data.details}
+            tags={item.data.tags}
+            url={"/products-and-services/" + item.slug}
+          />
+      ))}
+    </div>
+  </section>
+
+  <!-- Professionals & Teams -->
+  <section class="mb-16" id="professionals">
+    <div class="divider text-3xl font-bold mb-8">Professional Teams</div>
+    <div class="grid gap-6">
+      {professionalItems.map((item) => (
+          <HorizontalShopItem
+            title={item.data.title}
+            img={item.data.heroImage}
+            desc={item.data.description}
+            pricing={item.data.pricing}
+            oldPricing={item.data.oldPricing}
+            checkoutUrl={item.data.checkoutUrl}
+            badge={item.data.badge}
+            details={item.data.details}
+            tags={item.data.tags}
+            url={"/products-and-services/" + item.slug}
+          />
+      ))}
+    </div>
+  </section>
+
+  <!-- Students & Individual Learners -->
+  <section class="mb-16" id="students">
+    <div class="divider text-3xl font-bold mb-8">Tutoring</div>
+    <div class="grid gap-6 md:grid-cols-2">
+      {studentItems.map((item) => (
+          <HorizontalShopItem
+            title={item.data.title}
+            img={item.data.heroImage}
+            desc={item.data.description}
+            pricing={item.data.pricing}
+            oldPricing={item.data.oldPricing}
+            checkoutUrl={item.data.checkoutUrl}
+            badge={item.data.badge}
+            details={item.data.details}
+            tags={item.data.tags}
+            url={"/products-and-services/" + item.slug}
+          />
+      ))}
+    </div>
+  </section>
+
+  <!-- Contact / Lead Capture -->
+  <section class="mb-16" id="contact">
+    <ContactForm />
+    <p class="text-base-content/60 mt-6 text-center">
+      Or email me directly: <a href="mailto:i.tchangalov@gmail.com" class="underline hover:text-primary">i.tchangalov@gmail.com</a>
+    </p>
+  </section>
 
   <div class="flex justify-between">
     {

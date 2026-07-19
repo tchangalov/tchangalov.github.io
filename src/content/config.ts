@@ -6,7 +6,8 @@ const blogSchema = z.object({
     pubDate: z.coerce.date(),
     updatedDate: z.string().optional(),
     heroImage: z.string().optional(),
-    badge: z.string().optional()
+    badge: z.string().optional(),
+    tags: z.array(z.string()).optional()
 });
 
 const storeSchema = z.object({
